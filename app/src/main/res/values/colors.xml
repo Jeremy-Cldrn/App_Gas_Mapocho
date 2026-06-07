@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_blue">#00A3E0</color> <!-- Celeste del header -->
+    <color name="brand_red">#ED2939</color>  <!-- Rojo del botón Continuar/Pagar -->
+    <color name="brand_pink">#F9A6AC</color> <!-- Color pastel del botón Modificar -->
+    <color name="text_dark">#4D4D4D</color>  <!-- Gris oscuro de las letras -->
+    <color name="text_muted">#989A9C</color> <!-- Gris claro de los enunciados -->
+</resources>
