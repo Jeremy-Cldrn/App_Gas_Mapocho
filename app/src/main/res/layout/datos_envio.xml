@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="Datos de envío"
-            android:textColor="@color/negro_letras"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
 
