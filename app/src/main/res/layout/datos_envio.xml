@@ -1,6 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
+    <RelativeLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/celeste_fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="Volver atrás"
+            android:focusable="true"
+            android:padding="12dp"
+            android:src="@drawable/outline_arrow_back_ios_new_24"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Datos de envío"
+            android:textColor="@color/negro_letras"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="Nombres y apellidos"
+                android:textColor="@color/negro_letras"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etnombres"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_input"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="12dp"
+                android:drawableTint="#009CDE"
+                android:elevation="2dp"
+                android:hint="Ej: Juan Perez"
+                android:inputType="textPersonName"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#333333"
+                android:textColorHint="@color/gris_letras"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="Correo"
+                android:textColor="@color/negro_letras"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etcorreo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_input"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="12dp"
+                android:drawableTint="#009CDE"
+                android:elevation="2dp"
+                android:hint="Ej: juan@gmail.com"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#333333"
+                android:textColorHint="@color/gris_letras"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="Teléfono"
+                android:textColor="@color/negro_letras"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ettelefono"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_input"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="12dp"
+                android:drawableTint="#009CDE"
+                android:elevation="2dp"
+                android:hint="Ej: +56 987654321"
+                android:inputType="phone"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#333333"
+                android:textColorHint="@color/gris_letras"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="Comuna"
+                android:textColor="@color/negro_letras"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etcomuna"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_input"
+                android:drawableStart="@drawable/ic_map"
+                android:drawablePadding="12dp"
+                android:drawableTint="#009CDE"
+                android:elevation="2dp"
+                android:hint="Ej: Maipú"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#333333"
+                android:textColorHint="@color/gris_letras"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="Dirección"
+                android:textColor="@color/negro_letras"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etdireccion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_input"
+                android:drawableStart="@drawable/ic_home"
+                android:drawablePadding="12dp"
+                android:drawableTint="#009CDE"
+                android:elevation="2dp"
+                android:hint="Ej: Calle Maipú"
+                android:inputType="textPostalAddress"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#333333"
+                android:textColorHint="@color/gris_letras"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="Referencia"
+                android:textColor="@color/negro_letras"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etreferencia"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/bg_input"
+                android:drawableStart="@drawable/ic_location_on"
+                android:drawablePadding="12dp"
+                android:drawableTint="#009CDE"
+                android:elevation="2dp"
+                android:hint="Ej: Parque Maipú"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#333333"
+                android:textColorHint="@color/gris_letras"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btncontinuar"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_button"
+                android:text="Continuar"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
