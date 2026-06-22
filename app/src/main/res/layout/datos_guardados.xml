@@ -30,16 +30,15 @@
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="37dp"
-            android:layout_alignTop="@+id/textView2"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="12dp"
-            android:tint="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.041"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/outline_arrow_back_ios_new_24" />
+            app:srcCompat="@drawable/outline_arrow_back_ios_new_24"
+            app:tint="@color/white" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
@@ -87,121 +86,216 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
                     android:paddingVertical="8dp">
 
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        app:srcCompat="@drawable/ic_person"
+                        app:tint="@color/negro_letras" />
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="Nombres y apellidos"
-                        android:textColor="#989A9C" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:text="Juan Perez"
-                        android:textColor="#4D4D4D"
+                        android:textColor="@color/negro_letras"
                         android:textStyle="bold" />
-                </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Juan Perez"
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="#EEEEEE" />
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
                     android:paddingVertical="8dp">
 
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        app:srcCompat="@drawable/ic_email"
+                        app:tint="@color/negro_letras" />
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="Correo"
-                        android:textColor="#989A9C" />
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
                         android:text="juan@gmail.com"
-                        android:textColor="#4D4D4D" />
-                </RelativeLayout>
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="#EEEEEE" />
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
                     android:paddingVertical="8dp">
 
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        app:srcCompat="@drawable/ic_phone"
+                        app:tint="@color/negro_letras" />
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="Teléfono"
-                        android:textColor="#989A9C" />
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:text="+51 987654321"
-                        android:textColor="#4D4D4D" />
-                </RelativeLayout>
+                        android:text="+56 998794211"
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="#EEEEEE" />
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
                     android:paddingVertical="8dp">
 
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        app:srcCompat="@drawable/ic_map"
+                        app:tint="@color/negro_letras" />
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Comuna/Distrito"
-                        android:textColor="#989A9C" />
+                        android:layout_weight="1"
+                        android:text="Comuna"
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:text="Maipú"
-                        android:textColor="#4D4D4D" />
-                </RelativeLayout>
+                        android:text="Santiago Centro"
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="#EEEEEE" />
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
                     android:paddingVertical="8dp">
 
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        app:srcCompat="@drawable/ic_home"
+                        app:tint="@color/negro_letras" />
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:text="Dirección"
-                        android:textColor="#989A9C" />
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:text="Calle Maipú"
-                        android:textColor="#4D4D4D" />
-                </RelativeLayout>
+                        android:text="Avenida Mapocho 2933"
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        app:srcCompat="@drawable/ic_location_on"
+                        app:tint="@color/negro_letras" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Referencia"
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Frente a una Shell"
+                        android:textColor="@color/negro_letras"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
