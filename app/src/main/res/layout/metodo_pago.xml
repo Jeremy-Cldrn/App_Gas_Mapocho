@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
@@ -12,17 +13,6 @@
         android:layout_height="60dp"
         android:background="#00A3E0"
         app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/btnBackYape"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="16dp"
-            android:src="@android:drawable/ic_menu_revert"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="#FFFFFF" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -36,61 +26,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/tvSubtituloYape"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Yape"
-        android:textColor="#4D4D4D"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbarYape" />
-
-    <ImageView
-        android:id="@+id/imgLogoYape"
-        android:layout_width="140dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/yape"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvSubtituloYape" />
-
-    <TextView
-        android:id="@+id/tvInstruccionYape"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginHorizontal="32dp"
-        android:gravity="center"
-        android:text="Aprueba tu compra con tu código\nde aprobación"
-        android:textColor="#4D4D4D"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgLogoYape" />
-
-    <EditText
-        android:id="@+id/etCodigoYape"
-        android:layout_width="240dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/bg_rounded_input"
-        android:gravity="center"
-        android:hint="Código de 6 dígitos"
-        android:textColorHint="#989A9C"
-        android:textColor="#4D4D4D"
-        android:inputType="number"
-        android:maxLength="6"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvInstruccionYape" />
 
     <Button
         android:id="@+id/btnPagarYape"

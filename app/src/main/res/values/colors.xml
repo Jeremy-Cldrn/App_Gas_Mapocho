@@ -6,4 +6,6 @@
     <color name="rojo_fondo">#ED2939</color>
     <color name="gris_letras">#989A9C</color>
     <color name="negro_letras">#4D4D4D</color>
+    <color name="fondo_celeste_2">#EAF6FF</color>
+    <color name="input_login">#D9D9D9</color>
 </resources>
